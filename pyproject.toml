@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentic-mr-reviewer"
+version = "0.1.0"
+description = "Agentic GitLab Merge Request Reviewer"
+authors = [{name = "Gautam Samriya"}]
+requires-python = ">=3.10"
+dependencies = [
+  "httpx>=0.27.0",
+  "pydantic>=2.5.0",
+  "pydantic-settings>=2.2.0",
+  "typer>=0.12.0",
+  "rich>=13.7.0",
+  "python-dotenv>=1.0.1",
+  # replace/change this depending on LLM stack
+  "openai>=1.30.0",
+]
+
+[project.optional-dependencies]
+dev = [
+ "pytest-mock>=3.12.0",
+]
+
+[project.scripts]
+mr-reviewer = "agentic_mr_reviewer.cli:app"
