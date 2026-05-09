@@ -2,9 +2,7 @@
 
 
 
-### Getting started
-
-This is the innovation sprint where I would try to learn Agentic AI system and try to come up with Agectic Gitlab Merge Request Reviewer.
+### Getting started - Agectic Gitlab Merge Request Reviewer.
 
 We built a small agentic AI system **agentic-mr-reviewer** that helps review GitLab Merge Requests (MRs) by combining existing tooling (linters, tests, diff inspection) with LLM-based reasoning. This could improve review quality and consistency, especially on large or repetitive MRs, and act as a productivity support tool for reviewers. The tooling could be extended into CI pipelines as an optional pre-review step.
 The goal is to provide a reviewer style assistant that summarises what an MR changes, runs and interprets lint/tests, and highlights potential issues or questions for the human reviewer.
